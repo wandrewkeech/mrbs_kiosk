@@ -1,0 +1,16 @@
+[Unit]
+Description=Tab Switching Service
+Wants=multi-user.target
+After=multi-user.target
+
+[Service]
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/sign/.Xauthority
+Type=simple
+ExecStart=/home/sign/tabswitch.sh
+Restart=on-abort
+User=sign
+Group=sign
+
+[Install]
+WantedBy=multi-user.target
