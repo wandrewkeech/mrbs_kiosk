@@ -1,17 +1,17 @@
 [Unit]
-Description=Tab Switching Service
+Description=Screen Off Service
 Wants=multi-user.target
 After=kiosk.service
-PartOf=kiosk.service
+Conflicts=kiosk.service
 
 [Service]
-Environment=DISPLAY=:0
+Environment=DISPLAY=:0.0
 Environment=XAUTHORITY=/home/sign/.Xauthority
 Type=simple
-ExecStart=/home/sign/tabswitch.sh
-Restart=on-abort
+ExecStart=/home/sign/screenoff.sh
 User=sign
 Group=sign
 
 [Install]
 WantedBy=multi-user.target
+

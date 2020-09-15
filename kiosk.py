@@ -41,8 +41,6 @@ prefs['profile']['exit_type']="Normal"
 with open(pref_path, 'w') as f:
     json.dump(prefs,f)
 
-time.sleep(20)
-
 subprocess.run(["chromium-browser", "--kiosk", "--incognito", "--start-maximized", urls[5], urls[1], urls[2], urls[3], urls[4], urls[0] ])
 
 # Moved tab switching to external process for more reliable display attachment
