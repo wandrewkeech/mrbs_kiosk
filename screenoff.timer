@@ -1,0 +1,8 @@
+[Unit]
+Description=Screen Off Service
+
+[Timer]
+OnCalendar=*-*-* 18:00:00
+
+[Install]
+WantedBy=multi-user.target
