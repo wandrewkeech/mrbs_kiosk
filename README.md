@@ -18,5 +18,5 @@ The core service generates well formatted URLs to provide `chromium`, and launch
 
 ### Todo
 
- - [] Get the screen turning off and on over the course of the day
- - [] Have a reliable daily service reset to get the current day
+ - [x] ~~Get the screen turning off and on over the course of the day~~
+ - [x] ~~Have a reliable daily service reset to get the current day~~
