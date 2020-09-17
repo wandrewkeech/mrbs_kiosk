@@ -1,10 +1,11 @@
 [Unit]
 Description=Screen On Service
 Before=kiosk.service
-Requiredby=kiosk.service
 
 [Service]
 ExecStart=/home/sign/screenon.sh
+Restart=always
+RestartSec=90s
 
 [Install]
 WantedBy=multi-user.target

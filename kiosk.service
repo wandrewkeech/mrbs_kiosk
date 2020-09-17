@@ -2,13 +2,12 @@
 Description=Kiosk Service
 After=multi-user.target
 After=screenon.service
-Before=tabswitch.service
 Requires=tabswitch.service
 Requires=screenon.service
 
 [Service]
 Environment=DISPLAY=:0.0
-Environment=XAUTHROITY=/home/sign/.Xauthority
+Environment=XAUTHORITY=/home/sign/.Xauthority
 Type=simple
 ExecStart=/home/sign/kiosk.py
 Restart=always

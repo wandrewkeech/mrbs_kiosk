@@ -7,7 +7,7 @@ import json
 import os
 
 # Export environment vars for all subprocesses
-os.environ['DISPLAY']=":0"
+os.environ['DISPLAY']=":0.0"
 os.environ['XAUTHORITY']="/home/sign/.Xauthority"
 
 # Keep screen from blanking
